@@ -18,6 +18,9 @@
 		2D2BDB84271B767A003C47B2 /* Pods_tmob_demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 932DAA0E7E3D607E9DDB1E7A /* Pods_tmob_demo.framework */; };
 		2D2BDBB2271B7A1F003C47B2 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2BDBB1271B7A1F003C47B2 /* Api.swift */; };
 		2D2BDBB7271B7E05003C47B2 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2BDBB6271B7E05003C47B2 /* User.swift */; };
+		2D2BDBBF271B8082003C47B2 /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2BDBBE271B8082003C47B2 /* Endpoints.swift */; };
+		2D2BDBC4271B84BD003C47B2 /* UsersResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2BDBC3271B84BD003C47B2 /* UsersResponse.swift */; };
+		2D2BDBC9271B85DE003C47B2 /* UserDetailResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2BDBC8271B85DE003C47B2 /* UserDetailResponse.swift */; };
 		90178417915A4B49FD9BFC54 /* Pods_tmob_demoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AAEC8A00D8613CF52331128 /* Pods_tmob_demoTests.framework */; };
 		DE25BF73D43DA46D06A9F6CD /* Pods_tmob_demo_tmob_demoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 397C675FC4D03CC2CF4E787D /* Pods_tmob_demo_tmob_demoUITests.framework */; };
 /* End PBXBuildFile section */
@@ -58,6 +61,9 @@
 		2D2BDB23271B6A7D003C47B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2D2BDBB1271B7A1F003C47B2 /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
 		2D2BDBB6271B7E05003C47B2 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		2D2BDBBE271B8082003C47B2 /* Endpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
+		2D2BDBC3271B84BD003C47B2 /* UsersResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersResponse.swift; sourceTree = "<group>"; };
+		2D2BDBC8271B85DE003C47B2 /* UserDetailResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailResponse.swift; sourceTree = "<group>"; };
 		397C675FC4D03CC2CF4E787D /* Pods_tmob_demo_tmob_demoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tmob_demo_tmob_demoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AAEC8A00D8613CF52331128 /* Pods_tmob_demoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tmob_demoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		752E11FFF7B28E0CACDD8F80 /* Pods-tmob-demo-tmob-demoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tmob-demo-tmob-demoUITests.release.xcconfig"; path = "Target Support Files/Pods-tmob-demo-tmob-demoUITests/Pods-tmob-demo-tmob-demoUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -164,6 +170,8 @@
 			isa = PBXGroup;
 			children = (
 				2D2BDBB6271B7E05003C47B2 /* User.swift */,
+				2D2BDBC3271B84BD003C47B2 /* UsersResponse.swift */,
+				2D2BDBC8271B85DE003C47B2 /* UserDetailResponse.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -180,6 +188,7 @@
 			isa = PBXGroup;
 			children = (
 				2D2BDBB1271B7A1F003C47B2 /* Api.swift */,
+				2D2BDBBE271B8082003C47B2 /* Endpoints.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -456,6 +465,9 @@
 				2D2BDB00271B6A79003C47B2 /* AppDelegate.swift in Sources */,
 				2D2BDBB2271B7A1F003C47B2 /* Api.swift in Sources */,
 				2D2BDBB7271B7E05003C47B2 /* User.swift in Sources */,
+				2D2BDBC9271B85DE003C47B2 /* UserDetailResponse.swift in Sources */,
+				2D2BDBBF271B8082003C47B2 /* Endpoints.swift in Sources */,
+				2D2BDBC4271B84BD003C47B2 /* UsersResponse.swift in Sources */,
 				2D2BDB02271B6A79003C47B2 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
