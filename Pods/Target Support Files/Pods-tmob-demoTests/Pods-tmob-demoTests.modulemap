@@ -1,0 +1,6 @@
+framework module Pods_tmob_demoTests {
+  umbrella header "Pods-tmob-demoTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

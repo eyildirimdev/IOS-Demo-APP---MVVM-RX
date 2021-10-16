@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,9 @@
 		2D2BDB0C271B6A7C003C47B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D2BDB0A271B6A7C003C47B2 /* LaunchScreen.storyboard */; };
 		2D2BDB17271B6A7D003C47B2 /* tmob_demoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2BDB16271B6A7D003C47B2 /* tmob_demoTests.swift */; };
 		2D2BDB22271B6A7D003C47B2 /* tmob_demoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2BDB21271B6A7D003C47B2 /* tmob_demoUITests.swift */; };
+		2D2BDB84271B767A003C47B2 /* Pods_tmob_demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 932DAA0E7E3D607E9DDB1E7A /* Pods_tmob_demo.framework */; };
+		90178417915A4B49FD9BFC54 /* Pods_tmob_demoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AAEC8A00D8613CF52331128 /* Pods_tmob_demoTests.framework */; };
+		DE25BF73D43DA46D06A9F6CD /* Pods_tmob_demo_tmob_demoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 397C675FC4D03CC2CF4E787D /* Pods_tmob_demo_tmob_demoUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		14A96740FA7AA8F875737D47 /* Pods-tmob-demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tmob-demo.debug.xcconfig"; path = "Target Support Files/Pods-tmob-demo/Pods-tmob-demo.debug.xcconfig"; sourceTree = "<group>"; };
+		275A25C0328F08B3FEF8CA5F /* Pods-tmob-demo-tmob-demoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tmob-demo-tmob-demoUITests.debug.xcconfig"; path = "Target Support Files/Pods-tmob-demo-tmob-demoUITests/Pods-tmob-demo-tmob-demoUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		2D2BDAFC271B6A79003C47B2 /* tmob-demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "tmob-demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D2BDAFF271B6A79003C47B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2D2BDB01271B6A79003C47B2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +54,13 @@
 		2D2BDB1D271B6A7D003C47B2 /* tmob-demoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "tmob-demoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D2BDB21271B6A7D003C47B2 /* tmob_demoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tmob_demoUITests.swift; sourceTree = "<group>"; };
 		2D2BDB23271B6A7D003C47B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		397C675FC4D03CC2CF4E787D /* Pods_tmob_demo_tmob_demoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tmob_demo_tmob_demoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3AAEC8A00D8613CF52331128 /* Pods_tmob_demoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tmob_demoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		752E11FFF7B28E0CACDD8F80 /* Pods-tmob-demo-tmob-demoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tmob-demo-tmob-demoUITests.release.xcconfig"; path = "Target Support Files/Pods-tmob-demo-tmob-demoUITests/Pods-tmob-demo-tmob-demoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		932DAA0E7E3D607E9DDB1E7A /* Pods_tmob_demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tmob_demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E065F1BA7E455700FC962312 /* Pods-tmob-demoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tmob-demoTests.debug.xcconfig"; path = "Target Support Files/Pods-tmob-demoTests/Pods-tmob-demoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E0F4B154B044274E12D0D7DD /* Pods-tmob-demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tmob-demo.release.xcconfig"; path = "Target Support Files/Pods-tmob-demo/Pods-tmob-demo.release.xcconfig"; sourceTree = "<group>"; };
+		FE7BBF058622004BD001FC8C /* Pods-tmob-demoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tmob-demoTests.release.xcconfig"; path = "Target Support Files/Pods-tmob-demoTests/Pods-tmob-demoTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D2BDB84271B767A003C47B2 /* Pods_tmob_demo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90178417915A4B49FD9BFC54 /* Pods_tmob_demoTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE25BF73D43DA46D06A9F6CD /* Pods_tmob_demo_tmob_demoUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +98,8 @@
 				2D2BDB15271B6A7D003C47B2 /* tmob-demoTests */,
 				2D2BDB20271B6A7D003C47B2 /* tmob-demoUITests */,
 				2D2BDAFD271B6A79003C47B2 /* Products */,
+				F229AD6019606496EEA2AE3E /* Pods */,
+				D44D915DBC90121BCD9B9EEC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -168,6 +185,29 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		D44D915DBC90121BCD9B9EEC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				932DAA0E7E3D607E9DDB1E7A /* Pods_tmob_demo.framework */,
+				397C675FC4D03CC2CF4E787D /* Pods_tmob_demo_tmob_demoUITests.framework */,
+				3AAEC8A00D8613CF52331128 /* Pods_tmob_demoTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F229AD6019606496EEA2AE3E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				14A96740FA7AA8F875737D47 /* Pods-tmob-demo.debug.xcconfig */,
+				E0F4B154B044274E12D0D7DD /* Pods-tmob-demo.release.xcconfig */,
+				275A25C0328F08B3FEF8CA5F /* Pods-tmob-demo-tmob-demoUITests.debug.xcconfig */,
+				752E11FFF7B28E0CACDD8F80 /* Pods-tmob-demo-tmob-demoUITests.release.xcconfig */,
+				E065F1BA7E455700FC962312 /* Pods-tmob-demoTests.debug.xcconfig */,
+				FE7BBF058622004BD001FC8C /* Pods-tmob-demoTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -175,9 +215,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2D2BDB26271B6A7D003C47B2 /* Build configuration list for PBXNativeTarget "tmob-demo" */;
 			buildPhases = (
+				3F26421ACFC1E90AC822C087 /* [CP] Check Pods Manifest.lock */,
 				2D2BDAF8271B6A79003C47B2 /* Sources */,
 				2D2BDAF9271B6A79003C47B2 /* Frameworks */,
 				2D2BDAFA271B6A79003C47B2 /* Resources */,
+				18FB4B2E231E87364F4E5AF9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -192,6 +234,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2D2BDB29271B6A7D003C47B2 /* Build configuration list for PBXNativeTarget "tmob-demoTests" */;
 			buildPhases = (
+				6E9EDD61F3E714C37857E634 /* [CP] Check Pods Manifest.lock */,
 				2D2BDB0E271B6A7C003C47B2 /* Sources */,
 				2D2BDB0F271B6A7C003C47B2 /* Frameworks */,
 				2D2BDB10271B6A7C003C47B2 /* Resources */,
@@ -210,9 +253,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2D2BDB2C271B6A7D003C47B2 /* Build configuration list for PBXNativeTarget "tmob-demoUITests" */;
 			buildPhases = (
+				8CA52B63C4864D53B4CBB2C7 /* [CP] Check Pods Manifest.lock */,
 				2D2BDB19271B6A7D003C47B2 /* Sources */,
 				2D2BDB1A271B6A7D003C47B2 /* Frameworks */,
 				2D2BDB1B271B6A7D003C47B2 /* Resources */,
+				805E1D1090EAD271E3149FCC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -292,6 +337,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		18FB4B2E231E87364F4E5AF9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-tmob-demo/Pods-tmob-demo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-tmob-demo/Pods-tmob-demo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-tmob-demo/Pods-tmob-demo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3F26421ACFC1E90AC822C087 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-tmob-demo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6E9EDD61F3E714C37857E634 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-tmob-demoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		805E1D1090EAD271E3149FCC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-tmob-demo-tmob-demoUITests/Pods-tmob-demo-tmob-demoUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-tmob-demo-tmob-demoUITests/Pods-tmob-demo-tmob-demoUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-tmob-demo-tmob-demoUITests/Pods-tmob-demo-tmob-demoUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8CA52B63C4864D53B4CBB2C7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-tmob-demo-tmob-demoUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2D2BDAF8271B6A79003C47B2 /* Sources */ = {
@@ -406,7 +554,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -461,7 +609,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -473,6 +621,7 @@
 		};
 		2D2BDB27271B6A7D003C47B2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14A96740FA7AA8F875737D47 /* Pods-tmob-demo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -492,6 +641,7 @@
 		};
 		2D2BDB28271B6A7D003C47B2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E0F4B154B044274E12D0D7DD /* Pods-tmob-demo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -511,6 +661,7 @@
 		};
 		2D2BDB2A271B6A7D003C47B2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E065F1BA7E455700FC962312 /* Pods-tmob-demoTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -533,6 +684,7 @@
 		};
 		2D2BDB2B271B6A7D003C47B2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE7BBF058622004BD001FC8C /* Pods-tmob-demoTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -555,6 +707,7 @@
 		};
 		2D2BDB2D271B6A7D003C47B2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 275A25C0328F08B3FEF8CA5F /* Pods-tmob-demo-tmob-demoUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -575,6 +728,7 @@
 		};
 		2D2BDB2E271B6A7D003C47B2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 752E11FFF7B28E0CACDD8F80 /* Pods-tmob-demo-tmob-demoUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

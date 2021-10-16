@@ -1,0 +1,6 @@
+framework module Pods_tmob_demo {
+  umbrella header "Pods-tmob-demo-umbrella.h"
+
+  export *
+  module * { export * }
+}
