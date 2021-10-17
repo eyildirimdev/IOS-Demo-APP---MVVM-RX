@@ -15,7 +15,7 @@ class DataRepository {
     func getUsersList() -> Observable<[User]>{
         return networkService.execute(url: URL(string: Endpoints.usersUrl)!)
     }
-    func getUserDetail(withUserName username: String) -> Observable<User>{
+    func searchUser(withUserName username: String) -> Observable<User>{
         let url = Endpoints.usersUrl + "/" + username
         return networkService.execute(url: URL(string: url)!)
     }
