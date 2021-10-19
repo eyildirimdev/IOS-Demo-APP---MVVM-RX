@@ -47,5 +47,25 @@ struct User: Codable {
         self.type = user.type
         self.site_admin = user.site_admin
     }
-
+    var userDataList: [String] {
+        return [login,
+                String(id),
+                node_id,
+                avatar_url,
+                gravatar_id,
+                gravatar_id,
+                url,
+                html_url,
+                followers_url,
+                following_url,
+                starred_url,
+                gists_url,
+                subscriptions_url,
+                organizations_url,
+                repos_url,
+                events_url,
+                received_events_url,
+                type,
+                String(site_admin)]
+    }
 }
