@@ -10,8 +10,6 @@ import RxSwift
 import RxCocoa
 final class UsersViewModel {
     // Inputs
-    let viewWillAppearSubject = PublishSubject<Void>()
-    let viewWillAppearForDetail = PublishSubject<Void>()
     let selectedIndexSubject = PublishSubject<IndexPath>()
     let searchQuerySubject = BehaviorSubject(value: "")
     
