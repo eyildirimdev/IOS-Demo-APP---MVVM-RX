@@ -27,7 +27,7 @@ final class UsersViewModel {
         
         let usersRequest = self.searchQuerySubject
             .asObservable()
-            .throttle(RxTimeInterval.milliseconds(3000), scheduler: MainScheduler.instance)
+            .throttle(RxTimeInterval.milliseconds(300), scheduler: MainScheduler.instance) // throttle to prevent api request overload -- can be replaced with debounce to ensure not exceeding daily api request quota
             .distinctUntilChanged()
             .flatMapLatest { query in
                 dataRepository
