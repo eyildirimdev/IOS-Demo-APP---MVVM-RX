@@ -13,7 +13,7 @@ import Kingfisher
 class UsersViewController: UIViewController {
     private var viewModel = UsersViewModel(dataRepository: DataRepository())
     var searchController = UISearchController(searchResultsController: nil)
-
+    var userDataList = [String]()
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var searchBar: UISearchBar!
 
@@ -52,8 +52,8 @@ class UsersViewController: UIViewController {
         
         viewModel.users
             .drive(tableView.rx.items(cellIdentifier: "Cell", cellType: UITableViewCell.self)) { (row, element, cell) in
-                cell.textLabel?.text = element.username
-                if let avatarUrl = try? URL(string: element.avatarUrl){
+                cell.textLabel?.text = element.login
+                if let avatarUrl = try? URL(string: element.avatar_url){
                     //TODO ADD PLACEHOLDER
                     cell.imageView?.kf.setImage(with: avatarUrl) { result in
                     cell.setNeedsLayout()
@@ -65,16 +65,26 @@ class UsersViewController: UIViewController {
             .disposed(by: disposeBag)
 
 
-        viewModel.selectedUsername
-            .drive(onNext: { [weak self] username in
-                guard let strongSelf = self else { return }
-                let alertController = UIAlertController(title: "\(username)", message: nil, preferredStyle: .alert)
-                alertController.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
-                strongSelf.present(alertController, animated: true, completion: nil)
+        viewModel.selectedUser
+            .drive(onNext: {user in
+                self.startDetailVC(user: user!)
             })
             .disposed(by: disposeBag)
     }
+    func startDetailVC(user:User){
+        self.userDataList = user.userDataList
+        performSegue(withIdentifier: "showDetails", sender: self)
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier == "showDetails") {
+            let vc = segue.destination as? UserDetailViewController
+            vc?.userDataList = self.userDataList
+        }
+    }
 }
+
+
+
 extension Reactive where Base: UIViewController {
     var viewWillAppear: ControlEvent<Void> {
         let source = self.methodInvoked(#selector(Base.viewWillAppear(_:))).map { _ in }

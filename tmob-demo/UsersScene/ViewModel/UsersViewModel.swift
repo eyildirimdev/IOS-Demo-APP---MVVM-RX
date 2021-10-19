@@ -11,12 +11,13 @@ import RxCocoa
 final class UsersViewModel {
     // Inputs
     let viewWillAppearSubject = PublishSubject<Void>()
+    let viewWillAppearForDetail = PublishSubject<Void>()
     let selectedIndexSubject = PublishSubject<IndexPath>()
     let searchQuerySubject = BehaviorSubject(value: "")
     
     // Outputs
-    var users: Driver<[UserViewModel]>
-    var selectedUsername: Driver<String>
+    var users: Driver<[User]>
+    var selectedUser: Driver<User?>
     
     private let dataRepository: DataRepository
     
@@ -24,7 +25,7 @@ final class UsersViewModel {
         self.dataRepository = dataRepository
         
         
-        let users = self.searchQuerySubject
+        let usersRequest = self.searchQuerySubject
             .asObservable()
             .throttle(RxTimeInterval.milliseconds(3000), scheduler: MainScheduler.instance)
             .distinctUntilChanged()
@@ -35,27 +36,19 @@ final class UsersViewModel {
             .asDriver(onErrorJustReturn: [User]())
         
         
-        self.users = users.map { $0.map { UserViewModel(user: $0)} }
+        self.users = usersRequest.map { $0.map { User(user: $0)} }
         
-        self.selectedUsername = self.selectedIndexSubject
+        self.selectedUser = self.selectedIndexSubject
             .asObservable()
             .withLatestFrom(users) { (indexPath, users) in
                 return users[indexPath.item]
             }
-            .map { $0.login }
-            .asDriver(onErrorJustReturn: "")
+            .asDriver(onErrorJustReturn: nil)
+        
+        
+        
     }
 
 }
 
-struct UserViewModel {
-    let username: String
-    let avatarUrl:String
-}
 
-extension UserViewModel {
-    init(user: User) {
-        self.username = user.login
-        self.avatarUrl = user.avatar_url
-    }
-}

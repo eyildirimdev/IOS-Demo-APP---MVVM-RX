@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D064344271EB1AD001EB53B /* UserDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D064343271EB1AD001EB53B /* UserDetailViewController.swift */; };
 		2D2BDB00271B6A79003C47B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2BDAFF271B6A79003C47B2 /* AppDelegate.swift */; };
 		2D2BDB02271B6A79003C47B2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2BDB01271B6A79003C47B2 /* SceneDelegate.swift */; };
 		2D2BDB04271B6A79003C47B2 /* UsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2BDB03271B6A79003C47B2 /* UsersViewController.swift */; };
@@ -46,6 +47,7 @@
 /* Begin PBXFileReference section */
 		14A96740FA7AA8F875737D47 /* Pods-tmob-demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tmob-demo.debug.xcconfig"; path = "Target Support Files/Pods-tmob-demo/Pods-tmob-demo.debug.xcconfig"; sourceTree = "<group>"; };
 		275A25C0328F08B3FEF8CA5F /* Pods-tmob-demo-tmob-demoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tmob-demo-tmob-demoUITests.debug.xcconfig"; path = "Target Support Files/Pods-tmob-demo-tmob-demoUITests/Pods-tmob-demo-tmob-demoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		2D064343271EB1AD001EB53B /* UserDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailViewController.swift; sourceTree = "<group>"; };
 		2D2BDAFC271B6A79003C47B2 /* tmob-demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "tmob-demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D2BDAFF271B6A79003C47B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2D2BDB01271B6A79003C47B2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -103,6 +105,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2D06433E271EB15D001EB53B /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2D2BDB03271B6A79003C47B2 /* UsersViewController.swift */,
+				2D064343271EB1AD001EB53B /* UserDetailViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		2D06433F271EB16E001EB53B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				2D2BDBCD271BA37D003C47B2 /* UsersViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		2D2BDAF3271B6A79003C47B2 = {
 			isa = PBXGroup;
 			children = (
@@ -180,8 +199,8 @@
 		2D2BDB3E271B6DE6003C47B2 /* UsersScene */ = {
 			isa = PBXGroup;
 			children = (
-				2D2BDB03271B6A79003C47B2 /* UsersViewController.swift */,
-				2D2BDBCD271BA37D003C47B2 /* UsersViewModel.swift */,
+				2D06433F271EB16E001EB53B /* ViewModel */,
+				2D06433E271EB15D001EB53B /* ViewController */,
 			);
 			path = UsersScene;
 			sourceTree = "<group>";
@@ -462,6 +481,7 @@
 				2D2BDBB7271B7E05003C47B2 /* User.swift in Sources */,
 				2D2BDBC9271B85DE003C47B2 /* UserDetailResponse.swift in Sources */,
 				2D2BDBBF271B8082003C47B2 /* Endpoints.swift in Sources */,
+				2D064344271EB1AD001EB53B /* UserDetailViewController.swift in Sources */,
 				2D2BDBC4271B84BD003C47B2 /* UsersResponse.swift in Sources */,
 				2D2BDBCE271BA37D003C47B2 /* UsersViewModel.swift in Sources */,
 				2D2BDB02271B6A79003C47B2 /* SceneDelegate.swift in Sources */,
