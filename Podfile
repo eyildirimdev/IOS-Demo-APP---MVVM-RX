@@ -6,6 +6,7 @@ target 'tmob-demo' do
   use_frameworks!
     pod 'RxSwift'
     pod 'RxCocoa'
+    pod 'Kingfisher'
   # Pods for tmob-demo
 
   target 'tmob-demoTests' do
