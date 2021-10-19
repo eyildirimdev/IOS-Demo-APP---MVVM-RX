@@ -25,7 +25,7 @@ final class UsersViewModel {
         self.dataRepository = dataRepository
         
         
-        let users = self.searchQuerySubject
+        let usersRequest = self.searchQuerySubject
             .asObservable()
             .throttle(RxTimeInterval.milliseconds(3000), scheduler: MainScheduler.instance)
             .distinctUntilChanged()
@@ -36,7 +36,7 @@ final class UsersViewModel {
             .asDriver(onErrorJustReturn: [User]())
         
         
-        self.users = users.map { $0.map { User(user: $0)} }
+        self.users = usersRequest.map { $0.map { User(user: $0)} }
         
         self.selectedUsername = self.selectedIndexSubject
             .asObservable()
@@ -48,4 +48,5 @@ final class UsersViewModel {
     }
 
 }
+
 
