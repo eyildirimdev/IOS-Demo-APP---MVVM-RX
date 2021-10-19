@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2D0642C9271CDD7D001EB53B /* UsersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D0642C8271CDD7D001EB53B /* UsersTableViewCell.swift */; };
 		2D2BDB00271B6A79003C47B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2BDAFF271B6A79003C47B2 /* AppDelegate.swift */; };
 		2D2BDB02271B6A79003C47B2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2BDB01271B6A79003C47B2 /* SceneDelegate.swift */; };
 		2D2BDB04271B6A79003C47B2 /* UsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2BDB03271B6A79003C47B2 /* UsersViewController.swift */; };
@@ -23,7 +22,6 @@
 		2D2BDBC4271B84BD003C47B2 /* UsersResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2BDBC3271B84BD003C47B2 /* UsersResponse.swift */; };
 		2D2BDBC9271B85DE003C47B2 /* UserDetailResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2BDBC8271B85DE003C47B2 /* UserDetailResponse.swift */; };
 		2D2BDBCE271BA37D003C47B2 /* UsersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2BDBCD271BA37D003C47B2 /* UsersViewModel.swift */; };
-		2D2BDBDB271BC890003C47B2 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2BDBDA271BC890003C47B2 /* ActivityIndicator.swift */; };
 		90178417915A4B49FD9BFC54 /* Pods_tmob_demoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AAEC8A00D8613CF52331128 /* Pods_tmob_demoTests.framework */; };
 		DE25BF73D43DA46D06A9F6CD /* Pods_tmob_demo_tmob_demoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 397C675FC4D03CC2CF4E787D /* Pods_tmob_demo_tmob_demoUITests.framework */; };
 /* End PBXBuildFile section */
@@ -48,7 +46,6 @@
 /* Begin PBXFileReference section */
 		14A96740FA7AA8F875737D47 /* Pods-tmob-demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tmob-demo.debug.xcconfig"; path = "Target Support Files/Pods-tmob-demo/Pods-tmob-demo.debug.xcconfig"; sourceTree = "<group>"; };
 		275A25C0328F08B3FEF8CA5F /* Pods-tmob-demo-tmob-demoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tmob-demo-tmob-demoUITests.debug.xcconfig"; path = "Target Support Files/Pods-tmob-demo-tmob-demoUITests/Pods-tmob-demo-tmob-demoUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		2D0642C8271CDD7D001EB53B /* UsersTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersTableViewCell.swift; sourceTree = "<group>"; };
 		2D2BDAFC271B6A79003C47B2 /* tmob-demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "tmob-demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D2BDAFF271B6A79003C47B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2D2BDB01271B6A79003C47B2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -69,7 +66,6 @@
 		2D2BDBC3271B84BD003C47B2 /* UsersResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersResponse.swift; sourceTree = "<group>"; };
 		2D2BDBC8271B85DE003C47B2 /* UserDetailResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailResponse.swift; sourceTree = "<group>"; };
 		2D2BDBCD271BA37D003C47B2 /* UsersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersViewModel.swift; sourceTree = "<group>"; };
-		2D2BDBDA271BC890003C47B2 /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
 		397C675FC4D03CC2CF4E787D /* Pods_tmob_demo_tmob_demoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tmob_demo_tmob_demoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AAEC8A00D8613CF52331128 /* Pods_tmob_demoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tmob_demoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		752E11FFF7B28E0CACDD8F80 /* Pods-tmob-demo-tmob-demoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tmob-demo-tmob-demoUITests.release.xcconfig"; path = "Target Support Files/Pods-tmob-demo-tmob-demoUITests/Pods-tmob-demo-tmob-demoUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -107,14 +103,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2D0642C7271CDD70001EB53B /* View */ = {
-			isa = PBXGroup;
-			children = (
-				2D0642C8271CDD7D001EB53B /* UsersTableViewCell.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
 		2D2BDAF3271B6A79003C47B2 = {
 			isa = PBXGroup;
 			children = (
@@ -140,7 +128,6 @@
 		2D2BDAFE271B6A79003C47B2 /* tmob-demo */ = {
 			isa = PBXGroup;
 			children = (
-				2D2BDB44271B6E44003C47B2 /* Utils */,
 				2D2BDB43271B6E31003C47B2 /* Network */,
 				2D2BDB3E271B6DE6003C47B2 /* UsersScene */,
 				2D2BDB3B271B6CF4003C47B2 /* Models */,
@@ -193,7 +180,6 @@
 		2D2BDB3E271B6DE6003C47B2 /* UsersScene */ = {
 			isa = PBXGroup;
 			children = (
-				2D0642C7271CDD70001EB53B /* View */,
 				2D2BDB03271B6A79003C47B2 /* UsersViewController.swift */,
 				2D2BDBCD271BA37D003C47B2 /* UsersViewModel.swift */,
 			);
@@ -207,14 +193,6 @@
 				2D2BDBBE271B8082003C47B2 /* Endpoints.swift */,
 			);
 			path = Network;
-			sourceTree = "<group>";
-		};
-		2D2BDB44271B6E44003C47B2 /* Utils */ = {
-			isa = PBXGroup;
-			children = (
-				2D2BDBDA271BC890003C47B2 /* ActivityIndicator.swift */,
-			);
-			path = Utils;
 			sourceTree = "<group>";
 		};
 		D44D915DBC90121BCD9B9EEC /* Frameworks */ = {
@@ -481,9 +459,7 @@
 				2D2BDB04271B6A79003C47B2 /* UsersViewController.swift in Sources */,
 				2D2BDB00271B6A79003C47B2 /* AppDelegate.swift in Sources */,
 				2D2BDBB2271B7A1F003C47B2 /* Api.swift in Sources */,
-				2D0642C9271CDD7D001EB53B /* UsersTableViewCell.swift in Sources */,
 				2D2BDBB7271B7E05003C47B2 /* User.swift in Sources */,
-				2D2BDBDB271BC890003C47B2 /* ActivityIndicator.swift in Sources */,
 				2D2BDBC9271B85DE003C47B2 /* UserDetailResponse.swift in Sources */,
 				2D2BDBBF271B8082003C47B2 /* Endpoints.swift in Sources */,
 				2D2BDBC4271B84BD003C47B2 /* UsersResponse.swift in Sources */,

@@ -64,9 +64,6 @@ class UsersViewController: UIViewController {
             }
             .disposed(by: disposeBag)
 
-        viewModel.loading
-            .drive(UIApplication.shared.rx.isNetworkActivityIndicatorVisible)
-            .disposed(by: disposeBag)
 
         viewModel.selectedUsername
             .drive(onNext: { [weak self] username in
