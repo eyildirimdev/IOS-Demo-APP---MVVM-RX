@@ -20,8 +20,6 @@
 		2D2BDBB2271B7A1F003C47B2 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2BDBB1271B7A1F003C47B2 /* Api.swift */; };
 		2D2BDBB7271B7E05003C47B2 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2BDBB6271B7E05003C47B2 /* User.swift */; };
 		2D2BDBBF271B8082003C47B2 /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2BDBBE271B8082003C47B2 /* Endpoints.swift */; };
-		2D2BDBC4271B84BD003C47B2 /* UsersResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2BDBC3271B84BD003C47B2 /* UsersResponse.swift */; };
-		2D2BDBC9271B85DE003C47B2 /* UserDetailResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2BDBC8271B85DE003C47B2 /* UserDetailResponse.swift */; };
 		2D2BDBCE271BA37D003C47B2 /* UsersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2BDBCD271BA37D003C47B2 /* UsersViewModel.swift */; };
 		90178417915A4B49FD9BFC54 /* Pods_tmob_demoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AAEC8A00D8613CF52331128 /* Pods_tmob_demoTests.framework */; };
 		DE25BF73D43DA46D06A9F6CD /* Pods_tmob_demo_tmob_demoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 397C675FC4D03CC2CF4E787D /* Pods_tmob_demo_tmob_demoUITests.framework */; };
@@ -65,8 +63,6 @@
 		2D2BDBB1271B7A1F003C47B2 /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
 		2D2BDBB6271B7E05003C47B2 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		2D2BDBBE271B8082003C47B2 /* Endpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
-		2D2BDBC3271B84BD003C47B2 /* UsersResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersResponse.swift; sourceTree = "<group>"; };
-		2D2BDBC8271B85DE003C47B2 /* UserDetailResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailResponse.swift; sourceTree = "<group>"; };
 		2D2BDBCD271BA37D003C47B2 /* UsersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersViewModel.swift; sourceTree = "<group>"; };
 		397C675FC4D03CC2CF4E787D /* Pods_tmob_demo_tmob_demoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tmob_demo_tmob_demoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AAEC8A00D8613CF52331128 /* Pods_tmob_demoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tmob_demoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -190,8 +186,6 @@
 			isa = PBXGroup;
 			children = (
 				2D2BDBB6271B7E05003C47B2 /* User.swift */,
-				2D2BDBC3271B84BD003C47B2 /* UsersResponse.swift */,
-				2D2BDBC8271B85DE003C47B2 /* UserDetailResponse.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -479,10 +473,8 @@
 				2D2BDB00271B6A79003C47B2 /* AppDelegate.swift in Sources */,
 				2D2BDBB2271B7A1F003C47B2 /* Api.swift in Sources */,
 				2D2BDBB7271B7E05003C47B2 /* User.swift in Sources */,
-				2D2BDBC9271B85DE003C47B2 /* UserDetailResponse.swift in Sources */,
 				2D2BDBBF271B8082003C47B2 /* Endpoints.swift in Sources */,
 				2D064344271EB1AD001EB53B /* UserDetailViewController.swift in Sources */,
-				2D2BDBC4271B84BD003C47B2 /* UsersResponse.swift in Sources */,
 				2D2BDBCE271BA37D003C47B2 /* UsersViewModel.swift in Sources */,
 				2D2BDB02271B6A79003C47B2 /* SceneDelegate.swift in Sources */,
 			);
