@@ -14,9 +14,10 @@ class UsersViewController: UIViewController {
     private var viewModel = UsersViewModel(dataRepository: DataRepository())
     var searchController = UISearchController(searchResultsController: nil)
     var userDataList = [String]()
+    var savedUsername = ""
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var searchBar: UISearchBar!
-
+    
     private let disposeBag = DisposeBag()
     
     override func viewDidLoad() {
@@ -29,7 +30,9 @@ class UsersViewController: UIViewController {
         searchController.hidesNavigationBarDuringPresentation = false
         
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
-        
+        if let username = UserDefaults.standard.string(forKey: "savedUsername"){
+            savedUsername = username
+        }
         bindViewModel()
     }
     
@@ -58,8 +61,11 @@ class UsersViewController: UIViewController {
                     cell.imageView?.kf.setImage(with: avatarUrl) { result in
                     cell.setNeedsLayout()
                     }
+                    
                 }
-               
+                if self.savedUsername.elementsEqual(element.login){
+                    cell.backgroundColor = UIColor.lightGray
+                }
                 
             }
             .disposed(by: disposeBag)
@@ -71,9 +77,14 @@ class UsersViewController: UIViewController {
             })
             .disposed(by: disposeBag)
     }
+    func saveUser(user:User){
+        savedUsername = user.login
+        UserDefaults.standard.set(savedUsername, forKey: "savedUsername")
+    }
     func startDetailVC(user:User){
         self.userDataList = user.userDataList
         performSegue(withIdentifier: "showDetails", sender: self)
+        saveUser(user: user)
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if (segue.identifier == "showDetails") {
