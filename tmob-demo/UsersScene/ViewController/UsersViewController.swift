@@ -13,7 +13,7 @@ import Kingfisher
 class UsersViewController: UIViewController {
     private var viewModel = UsersViewModel(dataRepository: DataRepository())
     var searchController = UISearchController(searchResultsController: nil)
-
+    var userDataList = [String]()
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var searchBar: UISearchBar!
 
@@ -65,16 +65,26 @@ class UsersViewController: UIViewController {
             .disposed(by: disposeBag)
 
 
-        viewModel.selectedUsername
-            .drive(onNext: { [weak self] username in
-                guard let strongSelf = self else { return }
-                let alertController = UIAlertController(title: "\(username)", message: nil, preferredStyle: .alert)
-                alertController.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
-                strongSelf.present(alertController, animated: true, completion: nil)
+        viewModel.selectedUser
+            .drive(onNext: {user in
+                self.startDetailVC(user: user!)
             })
             .disposed(by: disposeBag)
     }
+    func startDetailVC(user:User){
+        self.userDataList = user.userDataList
+        performSegue(withIdentifier: "showDetails", sender: self)
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier == "showDetails") {
+            let vc = segue.destination as? UserDetailViewController
+            vc?.userDataList = self.userDataList
+        }
+    }
 }
+
+
+
 extension Reactive where Base: UIViewController {
     var viewWillAppear: ControlEvent<Void> {
         let source = self.methodInvoked(#selector(Base.viewWillAppear(_:))).map { _ in }

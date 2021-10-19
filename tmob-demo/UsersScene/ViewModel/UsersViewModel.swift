@@ -17,7 +17,7 @@ final class UsersViewModel {
     
     // Outputs
     var users: Driver<[User]>
-    var selectedUsername: Driver<String>
+    var selectedUser: Driver<User?>
     
     private let dataRepository: DataRepository
     
@@ -38,13 +38,15 @@ final class UsersViewModel {
         
         self.users = usersRequest.map { $0.map { User(user: $0)} }
         
-        self.selectedUsername = self.selectedIndexSubject
+        self.selectedUser = self.selectedIndexSubject
             .asObservable()
             .withLatestFrom(users) { (indexPath, users) in
                 return users[indexPath.item]
             }
-            .map { $0.login }
-            .asDriver(onErrorJustReturn: "")
+            .asDriver(onErrorJustReturn: nil)
+        
+        
+        
     }
 
 }
