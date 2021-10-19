@@ -15,6 +15,7 @@ class UsersViewController: UIViewController {
     var searchController = UISearchController(searchResultsController: nil)
     var userDataList = [String]()
     var savedUsername = ""
+    var checkedUsersDict = [String:User]()
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var searchBar: UISearchBar!
     
@@ -80,11 +81,16 @@ class UsersViewController: UIViewController {
     func saveUser(user:User){
         savedUsername = user.login
         UserDefaults.standard.set(savedUsername, forKey: "savedUsername")
+        checkedUsersDict[savedUsername] = user
     }
     func startDetailVC(user:User){
-        self.userDataList = user.userDataList
+        var userToSave = user
+        if let savedUser = checkedUsersDict[userToSave.login]{
+            userToSave = savedUser
+        }
+        self.userDataList = userToSave.userDataList
         performSegue(withIdentifier: "showDetails", sender: self)
-        saveUser(user: user)
+        saveUser(user: userToSave)
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if (segue.identifier == "showDetails") {
