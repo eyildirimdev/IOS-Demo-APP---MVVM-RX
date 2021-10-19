@@ -38,10 +38,6 @@ class UsersViewController: UIViewController {
     }
     
     private func bindViewModel() {
-        rx.viewWillAppear
-            .asObservable()
-            .bind(to: viewModel.viewWillAppearSubject)
-            .disposed(by: disposeBag)
         
         tableView.rx.itemSelected
             .asObservable()
@@ -100,11 +96,3 @@ class UsersViewController: UIViewController {
     }
 }
 
-
-
-extension Reactive where Base: UIViewController {
-    var viewWillAppear: ControlEvent<Void> {
-        let source = self.methodInvoked(#selector(Base.viewWillAppear(_:))).map { _ in }
-        return ControlEvent(events: source)
-    }
-}
