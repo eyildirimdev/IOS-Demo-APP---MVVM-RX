@@ -18,7 +18,7 @@ class DataRepository {
         if username.isEmpty {
             return networkService.userService(url: URL(string: Endpoints.usersUrl)!,dataType: [User].self)
         }
-        let url = Endpoints.usersUrl + "/" + username
+        let url = Endpoints.usersUrl + "/" + username.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed)!
         return networkService.userService(url: URL(string: url)!,dataType: User.self)
     }
 }
