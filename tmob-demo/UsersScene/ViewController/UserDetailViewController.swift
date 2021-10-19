@@ -1,17 +1,17 @@
 //
-//  ViewController.swift
+//  UserDetailViewController.swift
 //  tmob-demo
 //
-//  Created by emir on 16.10.2021.
+//  Created by emir on 19.10.2021.
 //
 
+import Foundation
 import UIKit
 import RxSwift
 import RxCocoa
-import Kingfisher
 
-class UsersViewController: UIViewController {
-    private var viewModel = UsersViewModel(dataRepository: DataRepository())
+class UserDetailViewController: UIViewController {
+    private var viewModel: UsersViewModel
     var searchController = UISearchController(searchResultsController: nil)
 
     @IBOutlet weak var tableView: UITableView!
@@ -19,6 +19,14 @@ class UsersViewController: UIViewController {
 
     private let disposeBag = DisposeBag()
     
+    init(viewModel:UsersViewModel) {
+        self.viewModel = viewModel
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     override func viewDidLoad() {
         print("viewdidload")
         super.viewDidLoad()
@@ -38,31 +46,7 @@ class UsersViewController: UIViewController {
             .asObservable()
             .bind(to: viewModel.viewWillAppearSubject)
             .disposed(by: disposeBag)
-        
-        tableView.rx.itemSelected
-            .asObservable()
-            .bind(to: viewModel.selectedIndexSubject)
-            .disposed(by: disposeBag)
-        
-        searchBar.rx.text.orEmpty
-            .asObservable()
-            .bind(to: viewModel.searchQuerySubject)
-            .disposed(by: disposeBag)
-
-        
-        viewModel.users
-            .drive(tableView.rx.items(cellIdentifier: "Cell", cellType: UITableViewCell.self)) { (row, element, cell) in
-                cell.textLabel?.text = element.login
-                if let avatarUrl = try? URL(string: element.avatar_url){
-                    //TODO ADD PLACEHOLDER
-                    cell.imageView?.kf.setImage(with: avatarUrl) { result in
-                    cell.setNeedsLayout()
-                    }
-                }
-               
-                
-            }
-            .disposed(by: disposeBag)
+      
 
 
         viewModel.selectedUsername
@@ -75,9 +59,5 @@ class UsersViewController: UIViewController {
             .disposed(by: disposeBag)
     }
 }
-extension Reactive where Base: UIViewController {
-    var viewWillAppear: ControlEvent<Void> {
-        let source = self.methodInvoked(#selector(Base.viewWillAppear(_:))).map { _ in }
-        return ControlEvent(events: source)
-    }
-}
+
+

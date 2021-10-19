@@ -11,11 +11,12 @@ import RxCocoa
 final class UsersViewModel {
     // Inputs
     let viewWillAppearSubject = PublishSubject<Void>()
+    let viewWillAppearForDetail = PublishSubject<Void>()
     let selectedIndexSubject = PublishSubject<IndexPath>()
     let searchQuerySubject = BehaviorSubject(value: "")
     
     // Outputs
-    var users: Driver<[UserViewModel]>
+    var users: Driver<[User]>
     var selectedUsername: Driver<String>
     
     private let dataRepository: DataRepository
@@ -35,7 +36,7 @@ final class UsersViewModel {
             .asDriver(onErrorJustReturn: [User]())
         
         
-        self.users = users.map { $0.map { UserViewModel(user: $0)} }
+        self.users = users.map { $0.map { User(user: $0)} }
         
         self.selectedUsername = self.selectedIndexSubject
             .asObservable()
@@ -48,14 +49,3 @@ final class UsersViewModel {
 
 }
 
-struct UserViewModel {
-    let username: String
-    let avatarUrl:String
-}
-
-extension UserViewModel {
-    init(user: User) {
-        self.username = user.login
-        self.avatarUrl = user.avatar_url
-    }
-}
