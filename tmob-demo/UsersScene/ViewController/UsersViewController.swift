@@ -53,6 +53,7 @@ class UsersViewController: UIViewController {
         viewModel.users
             .drive(tableView.rx.items(cellIdentifier: "Cell", cellType: UITableViewCell.self)) { (row, element, cell) in
                 cell.textLabel?.text = element.login
+                cell.backgroundColor = UIColor.white
                 if let avatarUrl = try? URL(string: element.avatar_url){
                     //TODO ADD PLACEHOLDER
                     cell.imageView?.kf.setImage(with: avatarUrl) { result in
