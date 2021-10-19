@@ -12,11 +12,7 @@ import RxCocoa
 //API Helper class
 class DataRepository {
     private let networkService = NetworkService()
- 
-    func getUsersList() -> Observable<[User]>{
-        print("get users")
-        return networkService.userService(url: URL(string: Endpoints.usersUrl)!,dataType: [User].self)
-    }
+
     func searchUser(withUserName username: String) -> Observable<[User]>{
         print("get user for: " + username)
         if username.isEmpty {
