@@ -7,5 +7,5 @@
 
 import Foundation
 struct Endpoints {
-    static let usersUrl = "htttps://api.github.com/users"
+    static let usersUrl = "https://api.github.com/users"
 }
